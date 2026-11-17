@@ -1,0 +1,7 @@
+# History
+
+The scanner was developed in [comment-mark](https://github.com/privatenumber/comment-mark) and moved here unchanged from comment-mark `96765d2` on 2026-11-16. In the scanner notes, every commit hash or PR number names its repository. Some cited comment-mark revisions are no longer reachable from a branch and are kept as historical references. Marker-level behavior, such as pairing and content layout, stays documented there. The scanner and renderer-output audit were checked at comment-mark `2d57a1d` with Node 26.13.0 on 2026-11-15; earlier measurements keep their own dates and revisions in [linear-time.md](./linear-time.md).
+
+Earlier work behind the scanner is recorded in comment-mark: the parser alternatives, the marked token experiment, the attribute parser comparison, and the comment-scanner benchmarks from [PR #13](https://github.com/privatenumber/comment-mark/pull/13). The conclusions that still constrain the scanner are in [design.md](./design.md), [html-tokenizer.md](./html-tokenizer.md), and [linear-time.md](./linear-time.md). Re-evaluate a parser alternative only against representative documents, including source positions and GitHub's probe results.
+
+comment-mark's [reference parser spec](https://github.com/privatenumber/comment-mark/blob/96765d2/tests/specs/reference-parser.ts) compares its markers with micromark 4.0.3 with GFM tables. It stays in comment-mark because it compares markers, not comments. gfm-comments checks the scanner with its rendering tests, the GitHub probe fixtures, and the oracle.
