@@ -2,6 +2,18 @@
 	"name": "gfm-comments",
 	"version": "0.0.0-semantic-release",
 	"description": "Find the HTML comments that GitHub renders in Markdown, with their source offsets",
+	"keywords": [
+		"github",
+		"markdown",
+		"gfm",
+		"github-flavored-markdown",
+		"html",
+		"comments",
+		"html-comments",
+		"cmark-gfm",
+		"parser",
+		"scanner"
+	],
 	"license": "MIT",
 	"repository": "privatenumber/gfm-comments",
 	"author": {
